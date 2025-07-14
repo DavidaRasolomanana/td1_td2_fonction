@@ -2,8 +2,8 @@
 
 void lireTaille(int *n);
 void remplirTableau(int *T, int n);
-void afficherTableau(const int *T, int n);
-int sommeTableau(const int *T, int n);
+void afficherTableau(int *T, int n);
+int sommeTableau(int *T, int n);
 void afficherSomme(int somme);
 
 int main() 
@@ -39,7 +39,7 @@ void remplirTableau(int *T, int n)
     }
 }
 
-void afficherTableau(const int *T, int n) 
+void afficherTableau(int *T, int n) 
 {
     int i;
     printf("Contenu du tableau : ");
@@ -50,7 +50,7 @@ void afficherTableau(const int *T, int n)
     printf("\n");
 }
 
-int sommeTableau(const int *T, int n) 
+int sommeTableau(int *T, int n) 
 {
     int i;
     int somme=0;
